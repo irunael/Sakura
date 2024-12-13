@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+section {
+    margin-top: 30px;
+    max-width: 100%;
+    padding: 7%;
+}
+
+h3 {
+    font-size: 25px;
+    color: white;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+}
+
+.servicos {
+    display: flex; /* Alinha os itens em uma linha */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha de baixo se não houver espaço */
+    justify-content: flex-start; /* Adiciona espaço entre os cards */
+    gap: 20px;
+}
+
+.card {
+    flex: 1; /* Permite que os cards ocupem o espaço disponível */
+    max-width: 300px;; /* Define uma largura mínima para os cards */
+    max-height: 600px; /* Define uma altura máxima para os cards */
+    padding: 20px;
+    margin: 1%; /* Margem entre os cards */
+    border: solid 1px white;
+    border-radius: 10px;
+    overflow: hidden; /* Oculta o conteúdo que excede a altura máxima */
+    /* ou use overflow: auto; para adicionar uma barra de rolagem */
+}
+
+.imagem {
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.botao_link_remover, .botao_link_alterar {
+    padding: 3px;
+    border-radius: 5px;
+    display: inline-block;
+    max-width: 40%;
+    float: right;
+    margin-left: 5%;
+}
+
+.botao_link_remover{
+    background-color: #800020;
+    color: white;
+    border: solid 1px #FF4500;
+}
+
+.botao_link_alterar{
+    background-color: #FFD700;
+    color: white;
+    border: solid 1px #FFD700;
+}
+
+.botao_link_remover:hover {
+    background-color: #FF6347;
+    border: solid 2px #FFD700;
+    font-size: 20px;
+    color: white;
+}
+
+.botao_link_alterar:hover {
+    background-color: #FFD966;
+    border: solid 2px #FF4500;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+#addM{
+    width: 350px;
+    height: 400px;
+    background-color: #2e2e2e;
+    position: absolute;
+    margin-top: 120px;
+}
+
+#editM{
+    width: 350px;
+    height: 400px;
+    background-color: #2e2e2e;
+    position: absolute;
+    margin-top: 120px;
+}
+
+.forms{
+    margin-top: 30px;
+}
+
+.modal{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
+
+.teste {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: flex-end; /* Espaça os botões igualmente */
+    margin-top: 20px; /* Adiciona um espaço acima dos botões */
+}
+
+#botaoAdicionar, #fecharAddM, #botaoSalvarEdit, #fecharEditM{
+    color: white;
+    padding: 3px;
+    border: solid 1px black; 
+    border-radius: 5px;
+    display: inline-block;
+    max-width: 30%;
+    margin-left: 5%;
+    margin-top: 40px;
+}
+
+#botaoAdicionar, #botaoSalvarEdit {
+    background-color: green;
+    border: solid 2px black;
+    font-size: 20px;
+    color: black;
+}
+
+#fecharAddM, #fecharEditM {
+    background-color: red;
+    border: solid 2px black;
+    font-size: 20px;
+    color: black;
+}
+
+#confirmarExcluir, #cancelarExcluir{
+    color: white;
+    padding: 3px;
+    border: solid 1px black;
+    border-radius: 5px;
+    display: inline-block;
+    max-width: 40%;
+    float: right;
+    margin-left: 5%;
+    margin-top: 40px;
+}
+
+#modalExcluir{
+    background-color: #141414;
+}
+
+#confirmarExcluir{
+    background-color: green;
+    border: solid 2px black;
+    font-size: 20px;
+    color: black;
+}
+
+#cancelarExcluir{
+    background-color: red;
+    border: solid 2px black;
+    font-size: 20px;
+    color: black;
+}
+
+label{
+    margin-left: 10px;
+    color: white;
+}
+
+input{
+    float: right;
+    border-radius: 5px;
+}
